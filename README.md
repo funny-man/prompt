@@ -5,5 +5,5 @@ git clone git@github.com:funny-man/prompt.git
 
 npm install
 
-npm run build
+npm run serve
 ```

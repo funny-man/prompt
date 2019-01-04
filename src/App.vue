@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <prompt ref="prompt"></prompt>
+    <button @click="showPrompt">点我</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Prompt from './components/prompt.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'prompt': Prompt
+  },
+  methods: {
+    showPrompt() {
+      this.$refs.prompt.show();
+    }
   }
 }
 </script>
